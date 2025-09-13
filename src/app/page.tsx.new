@@ -1,0 +1,66 @@
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import VideoCard from '@/components/VideoCard'
+
+export default function Home() {
+  const videos = [
+    {
+      title: "Universal Music Group",
+      description: "Music video production",
+      imageUrl: "/videos/universal.jpg",
+      videoUrl: "https://example.com/video1"
+    },
+    {
+      title: "Samsung Campaign",
+      description: "Commercial production",
+      imageUrl: "/videos/samsung.jpg",
+      videoUrl: "https://example.com/video2"
+    },
+    {
+      title: "Adidas Sports",
+      description: "Sports commercial",
+      imageUrl: "/videos/adidas.jpg",
+      videoUrl: "https://example.com/video3"
+    },
+    {
+      title: "Iberia Airlines",
+      description: "Corporate video",
+      imageUrl: "/videos/iberia.jpg",
+      videoUrl: "https://example.com/video4"
+    },
+  ];
+
+  return (
+    <main className="bg-black min-h-screen">
+      <Header />
+      <div className="pt-20 pb-12">
+        {/* Logo Grid Section */}
+        <section className="container mx-auto px-4 py-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center">
+            {/* Add your client logos here */}
+            <img src="/logos/universal.svg" alt="Universal" className="h-12 w-auto filter invert" />
+            <img src="/logos/samsung.svg" alt="Samsung" className="h-12 w-auto filter invert" />
+            <img src="/logos/adidas.svg" alt="Adidas" className="h-12 w-auto filter invert" />
+            <img src="/logos/iberia.svg" alt="Iberia" className="h-12 w-auto filter invert" />
+          </div>
+        </section>
+
+        {/* Videos Grid */}
+        <section className="container mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {videos.map((video, index) => (
+              <VideoCard
+                key={index}
+                title={video.title}
+                description={video.description}
+                imageUrl={video.imageUrl}
+                videoUrl={video.videoUrl}
+              />
+            ))}
+          </div>
+        </section>
+      </div>
+      <Footer />
+    </main>
+  );
+}
