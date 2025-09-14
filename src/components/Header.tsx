@@ -7,9 +7,10 @@ const Header = () => {
             Marco Castillo
           </div>
           <div className="flex space-x-8 items-center">
-            <a href="/proyectos" className="hover:text-gray-300 transition-colors">PROYECTOS</a>
-            <a href="/empleo" className="hover:text-gray-300 transition-colors">EMPLEO</a>
-            <a href="/contacto" className="hover:text-gray-300 transition-colors">CONTACTO</a>
+            <a href="/home" className="hover:text-gray-300 transition-colors">Home</a>
+            <a href="/project" className="hover:text-gray-300 transition-colors">Projects</a>
+            <a href="/about" className="hover:text-gray-300 transition-colors">About Me</a>
+            <a href="/contact" className="hover:text-gray-300 transition-colors">Contact</a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               
             </a>
