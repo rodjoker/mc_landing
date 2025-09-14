@@ -6,21 +6,33 @@ export default function AboutMe() {
   const aboutInfo = [
     {
       title: "About Me",
-      description: "Soy un director y editor de video apasionado por contar historias visuales impactantes. Con años de experiencia en la industria audiovisual, me especializo en crear contenido que conecta con la audiencia y transmite mensajes poderosos a través de la narrativa visual.",
-      imageUrl: "/images/about-1.jpg",
+      description: "Desde que tengo memoria, mi vida ha sido un proyector de historias. No solo me limitaba a ver películas como Shrek o Megamente, sino que las devoraba una y otra vez, intrigado por cómo se construía cada escena para hacerme sentir, reír o soñar. Hoy, esa fascinación sigue intacta.Con más de cuatro años de experiencia, he transformado mi pasión de espectador a creador, pasando de ver la gran pantalla a la sala de edición. Como director y editor, mi misión es simple: usar el poder del cine para contar historias que conecten, inspiren y dejen una marca duradera. Esto es más que un trabajo; es mi forma de ver y entender el mundo",
+      imageUrl: "/mc1.jpeg",
       imageAlt: "Director trabajando"
     },
     {
       title: "Mi Experiencia",
-      description: "He trabajado con marcas reconocidas internacionalmente y artistas destacados, desarrollando comerciales, videos musicales y contenido corporativo. Mi enfoque combina creatividad con precisión técnica para entregar resultados excepcionales.",
-      imageUrl: "/images/about-2.jpg",
+      description: "in development process.",
+      imageUrl: "/mc2.jpeg",
       imageAlt: "Equipo de producción",
       reverse: true
     },
     {
       title: "Mi Proceso",
-      description: "Cada proyecto es único y merece una aproximación personalizada. Trabajo estrechamente con mis clientes desde la conceptualización hasta la entrega final, asegurando que cada detalle cumpla con los más altos estándares de calidad.",
-      imageUrl: "/images/about-3.jpg",
+      description: "in development process.",
+      imageUrl: "/mc3.jpeg",
+      imageAlt: "Proceso creativo"
+    },
+    {
+      title: "Mi Proceso",
+      description: "in development process.",
+      imageUrl: "/mc4.jpeg",
+      imageAlt: "Proceso creativo"
+    },
+    {
+      title: "Mi Proceso",
+      description: "in development process.",
+      imageUrl: "/mc5.jpeg",
       imageAlt: "Proceso creativo"
     }
   ];
