@@ -46,7 +46,7 @@ export default function AboutMe() {
           <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-8">
             Transformando Ideas en Historias Visuales
           </h1>
-          <p className="text-gray-400 text-center max-w-3xl mx-auto text-lg">
+          <p className="text-gray-400 text-center text-justify max-w-3xl mx-auto text-lg">
             Descubre cómo damos vida a tus ideas a través del poder del video y la narrativa visual.
           </p>
         </section>
@@ -73,7 +73,7 @@ export default function AboutMe() {
             <h2 className="text-3xl font-bold text-white mb-4">
               ¿Listo para crear algo increíble?
             </h2>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-400 mb-6 text-justify">
               Contacta conmigo para discutir tu próximo proyecto.
             </p>
             <a

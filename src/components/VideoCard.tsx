@@ -59,7 +59,7 @@ const VideoCard = ({ title, description, videoUrl, category }: VideoCardProps) =
         <h3 className="text-xl font-bold mb-3 text-white group-hover:text-gray-300 transition-colors">
           {title}
         </h3>
-        <p className="text-gray-400 text-sm leading-relaxed">
+        <p className="text-gray-400 text-sm leading-relaxed text-justify">
           {description}
         </p>
         
