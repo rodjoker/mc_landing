@@ -7,7 +7,7 @@ export default function Projects() {
     {
       title: "Proyecto Destacado",
       description:
-        "Una muestra de nuestro trabajo más reciente, donde la creatividad y la técnica se unen para crear experiencias visuales únicas.",
+        "El proyecto fue concebido bajo un esquema de improvisación conceptual, donde el guion funcionó más como un compendio de ideas de referencia que como una guía cerrada de montaje, orientando el tono de la edición. La primera decisión técnica fue establecer un ritmo frenético basado en la pista musical, utilizada como columna vertebral para sincronizar la disposición de los clips en el timeline. A partir de esa base, se aplicó un trabajo de montaje no lineal que vinculaba la colocación de fragmentos con compases específicos de la musicalidad, incorporando variaciones en parámetros como escala, ángulo y posición en pantalla. Estas modificaciones permitieron transformar material preexistente —presentado inicialmente como simples muestras estáticas— en una composición dinámica, logrando una estructura lúdica que prioriza la experimentación visual sobre la exposición de una idea única, funcionando como una celebración de múltiples posibilidades narrativas.",
       videoUrl: "https://youtu.be/wUl_57PEP8E?si=ecuyCWj0teg-WPbk",
       fichaTecnica: [
         { label: "Director", value: "Marco Castillo" },
@@ -20,7 +20,7 @@ export default function Projects() {
     {
       title: "Proyecto Destacado",
       description:
-        "Una muestra de nuestro trabajo más reciente, donde la creatividad y la técnica se unen para crear experiencias visuales únicas.",
+        "Mi objetivo fue construir una breve narrativa motivacional sobre la obsesión necesaria cuando queremos alcanzar una meta, utilizando material de b-roll y fragmentos de audio de proyectos cinematográficos relacionados con el tema.",
       videoUrl: "https://youtu.be/XiDVZveAkG8?si=lbTWl-3hlo2PT1Ly",
       fichaTecnica: [
         { label: "Director", value: "Marco Castillo" },
