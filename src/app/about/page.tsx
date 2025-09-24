@@ -40,7 +40,7 @@ export default function AboutMe() {
   return (
     <main className="bg-black min-h-screen">
       <Header />
-      <div className="pt-20 pb-12">
+      <div className="pt-20 pb-12 mt-8">
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-8">

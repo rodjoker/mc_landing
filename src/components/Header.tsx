@@ -9,12 +9,12 @@ const Header = () => {
   }
 
   return (
-    <header className="bg-black text-white fixed w-full top-0 z-50">
-      <div className="container mx-auto px-4 py-4">
+    <header className="bg-black text-white fixed w-full top-0 z-50 bg-[url('/mc_banner.jpeg')] bg-cover bg-center">
+      <div className="container mx-auto px-4 py-4 bg-black/50">
         <nav className="flex justify-between items-center">
-          <div className="h-22">
+          <div className="h-26">
             <img 
-              src="/mc_logo.jpeg" 
+              src="/mc_logo_2.jpeg" 
               alt="Marco Castillo Logo" 
               className="h-full w-auto object-contain"
             />
@@ -58,35 +58,35 @@ const Header = () => {
           `}>
             <a 
               href="/home" 
-              className="hover:text-gray-300 transition-colors block md:inline-block text-center"
+              className="hover:text-gray-300 transition-all duration-300 block md:inline-block text-center hover:transform hover:-translate-y-1 hover:scale-110 hover:shadow-lg hover:shadow-white/20"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </a>
             <a 
               href="/project" 
-              className="hover:text-gray-300 transition-colors block md:inline-block text-center"
+              className="hover:text-gray-300 transition-all duration-300 block md:inline-block text-center hover:transform hover:-translate-y-1 hover:scale-110 hover:shadow-lg hover:shadow-white/20"
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
             </a>
             <a 
               href="/about" 
-              className="hover:text-gray-300 transition-colors block md:inline-block text-center"
+              className="hover:text-gray-300 transition-all duration-300 block md:inline-block text-center hover:transform hover:-translate-y-1 hover:scale-110 hover:shadow-lg hover:shadow-white/20"
               onClick={() => setIsMenuOpen(false)}
             >
               About Me
             </a>
             <a 
               href="/services" 
-              className="hover:text-gray-300 transition-colors block md:inline-block text-center"
+              className="hover:text-gray-300 transition-all duration-300 block md:inline-block text-center hover:transform hover:-translate-y-1 hover:scale-110 hover:shadow-lg hover:shadow-white/20"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </a>
             <a 
               href="/contact" 
-              className="hover:text-gray-300 transition-colors block md:inline-block text-center"
+              className="hover:text-gray-300 transition-all duration-300 block md:inline-block text-center hover:transform hover:-translate-y-1 hover:scale-110 hover:shadow-lg hover:shadow-white/20"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
@@ -96,7 +96,7 @@ const Header = () => {
                 href="https://www.instagram.com/marcoalejandrocr" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-gray-300 transition-colors"
+                className="hover:text-gray-300 transition-all duration-300 hover:transform hover:-translate-y-1 hover:scale-125 hover:shadow-lg hover:shadow-white/20"
               >
                 <svg 
                   className="w-6 h-6" 
@@ -110,7 +110,7 @@ const Header = () => {
                 href="https://www.linkedin.com/in/marco-alejandro-castillo-rodríguez-9386bb276" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-gray-300 transition-colors"
+                className="hover:text-gray-300 transition-all duration-300 hover:transform hover:-translate-y-1 hover:scale-125 hover:shadow-lg hover:shadow-white/20"
               >
                 <svg 
                   className="w-6 h-6" 
@@ -124,7 +124,7 @@ const Header = () => {
                 href="https://www.tiktok.com/@castellofilm?is_from_webapp=1&sender_device=pc" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-gray-300 transition-colors"
+                className="hover:text-gray-300 transition-all duration-300 hover:transform hover:-translate-y-1 hover:scale-125 hover:shadow-lg hover:shadow-white/20"
               >
                 <svg 
                   className="w-6 h-6" 
