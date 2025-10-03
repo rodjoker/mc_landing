@@ -1,6 +1,7 @@
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import VideoCard from '../../components/VideoCard'
+import InfoCard from '../../components/InfoCard'
 
 export default function Home() {
   const videos = [
@@ -34,6 +35,15 @@ export default function Home() {
     <main className="bg-black min-h-screen">
       <Header />
       <div className="pt-20 pb-12">
+        {/* About Me Summary Section */}
+        <section className="container mx-auto px-4 py-12 mt-16">
+          <InfoCard
+            title="Productor Audiovisual"
+            description="Como productor audiovisual, conceptualizo, guionizo, dirijo y edito proyectos que abarcan desde videoclips y cortometrajes hasta contenido para redes sociales, tutoriales y documentales. He trabajado como guionista en proyectos musicales independientes y en la creación de contenido de valor para plataformas como YouTube y TikTok, donde desarrollo ideas en colaboración con el cliente, estructuro guiones tanto narrativos como técnicos y coordino la producción audiovisual. En la etapa de postproducción, edito utilizando herramientas de la suite de Adobe (Premiere Pro, After Effects, Audition), trato el color con DaVinci Resolve, y tengo conocimientos en diseño y animación de motion graphics, los cuales sigo estudiando y perfeccionando como parte de mi desarrollo profesional. Además, realizo grabaciones de voz en español e inglés, aplicando técnicas de optimización de audio y explorando el uso de inteligencia artificial para mejorar sonido, generar imágenes y aumentar la productividad en cada entrega."
+            imageUrl="/one.jpeg"
+            imageAlt="Director trabajando"
+          />
+        </section>
 
         {/* Videos Grid */}
         <section className="container mx-auto px-4 py-12">
