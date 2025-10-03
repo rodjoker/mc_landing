@@ -73,9 +73,6 @@ export default function AboutMe() {
             <h2 className="text-3xl font-bold text-white mb-4">
               ¿Listo para crear algo increíble?
             </h2>
-            <p className="text-gray-400 mb-6 text-justify">
-              Contacta conmigo para discutir tu próximo proyecto.
-            </p>
             <a
               href="mailto:contact@example.com"
               className="inline-block bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors"
