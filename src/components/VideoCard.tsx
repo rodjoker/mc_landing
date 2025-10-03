@@ -64,7 +64,7 @@ const VideoCard = ({ title, description, videoUrl, category }: VideoCardProps) =
         </p>
         
         {/* Call to action */}
-        <div className="mt-4 flex items-center text-sm text-gray-400 group-hover:text-white transition-colors">
+        {/* <div className="mt-4 flex items-center text-sm text-gray-400 group-hover:text-white transition-colors">
           <span>Ver video completo</span>
           <svg 
             className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" 
@@ -74,7 +74,7 @@ const VideoCard = ({ title, description, videoUrl, category }: VideoCardProps) =
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
-        </div>
+        </div> */}
       </div>
     </div>
   );
