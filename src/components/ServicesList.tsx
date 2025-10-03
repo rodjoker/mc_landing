@@ -7,39 +7,33 @@ const ServicesList = () => {
   const services = [
     {
       title: "Video Editing",
-      shortDescription: "Professional video editing services to bring your vision to life.",
-      fullDescription: "Professional video editing services to bring your vision to life. We handle cutting, transitions, effects, color grading, and sound mixing to create engaging content. Our team uses industry-leading software and techniques to ensure your videos stand out and captivate your audience.",
+      shortDescription: "Tienes una idea y quieres transformarla en un video que realmente conecte? Mi servicio de edición de video te ayuda a dar forma a tu contenido para que se vea profesional, atractivo y adaptado a cualquier plataforma.",
+      fullDescription: "¿Tienes una idea y quieres transformarla en un video que realmente conecte? Mi servicio de edición de video te ayuda a dar forma a tu contenido para que se vea profesional, atractivo y adaptado a cualquier plataforma. Con un enfoque en narrativa, color, sonido y diseño visual, el objetivo es crear piezas que transmitan tu mensaje de manera clara y memorable, generando un impacto real en tu audiencia.",
       icon: "🎬"
     },
     {
       title: "Scriptwriting",
-      shortDescription: "Expert scriptwriting services to help you tell your story effectively.",
-      fullDescription: "Expert scriptwriting services to help you tell your story effectively. From concept development to final draft, we ensure your message resonates with your audience. We specialize in creating compelling narratives, engaging dialogues, and structured storylines that keep viewers hooked.",
+      shortDescription: "Toda gran producción comienza con una buena historia.",
+      fullDescription: "Toda gran producción comienza con una buena historia. Mi servicio de escritura de guiones te acompaña desde la creación de la idea inicial y la redacción de la sinopsis, hasta el desarrollo de un tratamiento sólido y la escritura del guion completo. Trabajo con formatos técnicos profesionales para producciones en campo, asegurando que el guion esté listo para su rodaje, y también adapto estructuras dinámicas para contenido en redes sociales. El objetivo es darle a tu proyecto una base narrativa clara, creativa y funcional que facilite todo el proceso de producción y logre conectar con tu audiencia desde el primer momento.",
       icon: "✍️"
     },
     {
       title: "Photography",
-      shortDescription: "High-quality photography services that capture the perfect moments.",
-      fullDescription: "High-quality photography services that capture the perfect moments. We specialize in various styles and techniques to meet your specific needs. From event photography to professional portraits and commercial shoots, we deliver stunning images that tell your story.",
+      shortDescription: "La imagen correcta puede marcar la diferencia en cómo tu proyecto conecta con las personas.",
+      fullDescription: "La imagen correcta puede marcar la diferencia en cómo tu proyecto conecta con las personas. Mi servicio de fotografía está orientado a los estilos más demandados en redes sociales, desde retratos y lifestyle hasta producto y contenido visual para marcas. Estoy preparado para colaborar contigo y adaptar mi estilo a las necesidades de tu proyecto, siempre con la meta de entregar imágenes de calidad profesional que transmitan tu mensaje y destaquen en cualquier plataforma.",
       icon: "📸"
     },
     {
       title: "Video Recording",
-      shortDescription: "Professional video recording services using state-of-the-art equipment.",
-      fullDescription: "Professional video recording services using state-of-the-art equipment. We ensure high-quality footage that meets your project requirements. Our team is experienced in different shooting environments and can handle everything from intimate interviews to large-scale productions.",
+      shortDescription: "Tu marca tiene una historia que merece ser contada en video.",
+      fullDescription: "Tu marca tiene una historia que merece ser contada en video. Con mi servicio de videografía, transformo tus ideas en contenido visual de alta calidad que refleja la esencia de tu proyecto y conecta con tu audiencia. En un entorno digital donde lo visual define el alcance, te ayudo a llevar tu identidad a la pantalla de una forma clara, creativa y entretenida, impulsando tu presencia en redes y generando resultados reales para tu negocio.",
       icon: "🎥"
     },
-    {
-      title: "YouTube Channel Consulting",
-      shortDescription: "Strategic consulting for your YouTube channel growth and optimization.",
-      fullDescription: "Strategic consulting for your YouTube channel. We help optimize your content, improve your aesthetics, and develop your channel's unique style. Our expertise includes content strategy, SEO optimization, thumbnail design, and audience engagement techniques to help your channel grow.",
-      icon: "🎯"
-    }
   ];
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {services.map((service, index) => (
           <div 
             key={index}

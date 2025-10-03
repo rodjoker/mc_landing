@@ -45,9 +45,6 @@ export default function Contact() {
           <div className="max-w-2xl mx-auto">
             {/* Header */}
             <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                Contacto
-              </h1>
               <p className="text-gray-400 text-lg">
                 ¿Tienes un proyecto en mente? Cuéntame más sobre él.
               </p>

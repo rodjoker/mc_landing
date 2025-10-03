@@ -74,7 +74,7 @@ export default function AboutMe() {
               ¿Listo para crear algo increíble?
             </h2>
             <a
-              href="mailto:contact@example.com"
+              href="/contact"
               className="inline-block bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors"
             >
               Contáctame
