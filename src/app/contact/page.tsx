@@ -1,10 +1,44 @@
+"use client";
+
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import { useRef, useState } from 'react';
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+
+ const form = useRef<HTMLFormElement>(null);
+  const [statusMessage, setStatusMessage] = useState<string | null>(null);
+  const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!form.current) return;
+
+    emailjs.sendForm(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
+      form.current,
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? ""
+    ).then(
+      () => {
+        setStatusMessage("Mensaje enviado con éxito ✅");
+        setIsSuccess(true);
+        form.current?.reset(); // Limpia los campos
+      },
+      () => {
+        setStatusMessage("Error al enviar el mensaje ❌");
+        setIsSuccess(false);
+      }
+    );
+  };
+
   return (
-    <main className="bg-black min-h-screen">
-      <Header />
+    <>
+     <Header />
+    <main className="bg-black min-h-screen mt-16">
+     
       <div className="pt-20 pb-12">
         {/* Contact Form Section */}
         <section className="container mx-auto px-4 py-12">
@@ -20,7 +54,7 @@ export default function Contact() {
             </div>
 
             {/* Form */}
-            <form className="bg-zinc-900 rounded-lg p-8 shadow-2xl">
+            <form ref={form} onSubmit={sendEmail} className="bg-zinc-900 rounded-lg p-8 shadow-2xl">
               {/* Name Field */}
               <div className="mb-6">
                 <label 
@@ -36,24 +70,6 @@ export default function Contact() {
                   required
                   className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-zinc-700 text-white focus:outline-none focus:border-white transition-colors"
                   placeholder="Tu nombre"
-                />
-              </div>
-
-              {/* Phone Field */}
-              <div className="mb-6">
-                <label 
-                  htmlFor="phone" 
-                  className="block text-white font-medium mb-2"
-                >
-                  Teléfono
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  required
-                  className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-zinc-700 text-white focus:outline-none focus:border-white transition-colors"
-                  placeholder="+1 (234) 567-8900"
                 />
               </div>
 
@@ -96,44 +112,20 @@ export default function Contact() {
                 </svg>
               </button>
             </form>
-
-            {/* Additional Contact Info */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-              <div className="p-6 bg-zinc-900 rounded-lg">
-                <h3 className="text-white font-semibold mb-2">Email</h3>
-                <a 
-                  href="mailto:contact@example.com" 
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  contact@example.com
-                </a>
-              </div>
-              <div className="p-6 bg-zinc-900 rounded-lg">
-                <h3 className="text-white font-semibold mb-2">Sígueme</h3>
-                <div className="flex justify-center space-x-4">
-                  <a 
-                    href="https://instagram.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    Instagram
-                  </a>
-                  <a 
-                    href="https://linkedin.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    LinkedIn
-                  </a>
-                </div>
-              </div>
-            </div>
+            {statusMessage && (
+            <p
+              className={`mt-6 text-lg font-medium ${
+                isSuccess ? "text-green-700" : "text-red-600"
+              }`}
+            >
+              {statusMessage}
+            </p>
+          )}
           </div>
         </section>
       </div>
       <Footer />
     </main>
+    </>
   )
 }
