@@ -19,8 +19,7 @@ const Footer = () => {
               href="/contact" 
               className="text-gray-400 hover:text-white"
             >Email</a>
-              <a href="tel:+1234567890" className="text-gray-400 hover:text-white">Phone</a>
-              <a href="/location" className="text-gray-400 hover:text-white">Location</a>
+              
             </div>
           </div>
           <div>
