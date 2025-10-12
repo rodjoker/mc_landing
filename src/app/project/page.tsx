@@ -108,6 +108,19 @@ export default function Projects() {
         { label: "Año", value: "2024" },
       ],
     },
+      {
+      title: "Some of my work",
+      description:
+        "Este documental de larga duración explora una serie de estructuras y lugares alrededor del mundo que sufrieron las consecuencias de una mala ingeniería durante su construcción, lo que llevó a que algunas colapsaran con el tiempo. La pieza fue desarrollada para un canal especializado en temas de arquitectura, historia y desastres estructurales, donde el dinamismo narrativo y la construcción de una narrativa visual e ilustrativa fueron las principales prioridades para lograr un video atractivo, informativo y visualmente potente.",
+      videoUrl: "https://youtu.be/hWm3_aWRTBo ",
+      fichaTecnica: [
+        { label: "Director", value: "Marco Castillo" },
+        { label: "Editor", value: "Marco Castillo" },
+        { label: "Duración", value: "9:55 min" },
+        { label: "Formato", value: "MP4 Full HD" },
+        { label: "Año", value: "2023" },
+      ],
+    },
 
   ];
 
