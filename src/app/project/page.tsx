@@ -82,7 +82,46 @@ export default function Projects() {
         { label: "Año", value: "2025" },
       ],
     },
-    // Puedes agregar más proyectos aquí
+    {
+      title: "Portfolio",
+      description:
+        "Una selección de piezas audiovisuales de mi gusto personal, acompañada de algunas muestras de mi trabajo en otros formatos. Todo reunido en una cápsula de un minuto, construida a través de un montaje rítmico e improvisado.",
+      videoUrl: "https://youtu.be/ycfs8_WwkIk?si=AUTnqX9ZcJNBlAqV",
+      fichaTecnica: [
+        { label: "Director", value: "Marco Castillo" },
+        { label: "Editor", value: "Marco Castillo" },
+        { label: "Duración", value: "1:14 min" },
+        { label: "Formato", value: "MP4 Full HD" },
+        { label: "Año", value: "2025" },
+      ],
+    },
+    {
+      title: "Delirios de poeta",
+      description:
+        "Una mirada abstracta cobra vida en este video de animación, creado para dar forma visual a las palabras del artista Hakayzen, un talentoso rapero con una propuesta única. Tuve el placer de colaborar en este proyecto como director del video animado, donde a través de más de 150 fotografías y varias semanas de edición, logramos construir un universo visual que refleja ese mundo abstracto y emocional que la canción busca transmitir.",
+      videoUrl: "https://youtu.be/8-UZJIyPZd0",
+      fichaTecnica: [
+        { label: "Director", value: "Marco Castillo" },
+        { label: "Editor", value: "Marco Castillo" },
+        { label: "Duración", value: "3:11 min" },
+        { label: "Formato", value: "MP4 Full HD" },
+        { label: "Año", value: "2024" },
+      ],
+    },
+      {
+      title: "Some of my work",
+      description:
+        "Este documental de larga duración explora una serie de estructuras y lugares alrededor del mundo que sufrieron las consecuencias de una mala ingeniería durante su construcción, lo que llevó a que algunas colapsaran con el tiempo. La pieza fue desarrollada para un canal especializado en temas de arquitectura, historia y desastres estructurales, donde el dinamismo narrativo y la construcción de una narrativa visual e ilustrativa fueron las principales prioridades para lograr un video atractivo, informativo y visualmente potente.",
+      videoUrl: "https://youtu.be/hWm3_aWRTBo",
+      fichaTecnica: [
+        { label: "Director", value: "Marco Castillo" },
+        { label: "Editor", value: "Marco Castillo" },
+        { label: "Duración", value: "9:55 min" },
+        { label: "Formato", value: "MP4 Full HD" },
+        { label: "Año", value: "2023" },
+      ],
+    },
+
   ];
 
   return (
