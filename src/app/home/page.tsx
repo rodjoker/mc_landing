@@ -6,9 +6,9 @@ import InfoCard from '../../components/InfoCard'
 export default function Home() {
   const videos = [
     {
-      title: "Portfolio",
-      description: "Una selección de piezas audiovisuales de mi gusto personal, acompañada de algunas muestras de mi trabajo en otros formatos. Todo reunido en una cápsula de un minuto, construida a través de un montaje rítmico e improvisado.",
-      videoUrl: "https://youtu.be/ycfs8_WwkIk?si=AUTnqX9ZcJNBlAqV",
+      title: "Delirios de Poeta",
+      description: "Una mirada abstracta cobra vida en este video de animación, creado para dar forma visual a las palabras del artista Hakayzen, un talentoso rapero con una propuesta única. Tuve el placer de colaborar en este proyecto como director del video animado, donde a través de más de 150 fotografías y varias semanas de edición, logramos construir un universo visual que refleja ese mundo abstracto y emocional que la canción busca transmitir.",
+      videoUrl: "https://youtu.be/8-UZJIyPZd0",
       category: "Video Edition"
     },
     {
