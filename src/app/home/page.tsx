@@ -51,6 +51,7 @@ export default function Home() {
             {videos.map((video, index) => (
               <VideoCard
                 key={index}
+                index={index}
                 title={video.title}
                 description={video.description}
                 videoUrl={video.videoUrl}

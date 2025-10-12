@@ -1,11 +1,22 @@
+'use client';
+
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
+
 interface VideoCardProps {
   title: string;
   description: string;
   videoUrl: string;
   category?: string;
+  index?: number;
 }
 
-const VideoCard = ({ title, description, videoUrl, category }: VideoCardProps) => {
+const VideoCard = ({ title, description, videoUrl, category, index = 0 }: VideoCardProps) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { 
+    once: false, // Permite que la animación se ejecute cada vez que entre en vista
+    margin: "-100px 0px" // Inicia la animación cuando está a 100px de entrar en vista
+  });
   // Función para convertir URL de YouTube en ID de video
   const getYoutubeId = (url: string) => {
     const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
@@ -16,8 +27,35 @@ const VideoCard = ({ title, description, videoUrl, category }: VideoCardProps) =
   const videoId = getYoutubeId(videoUrl);
   const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videoId}&showinfo=0&rel=0&modestbranding=1`;
 
+  // Variantes de animación
+  const cardVariants = {
+    hidden: { 
+      opacity: 0, 
+      x: index % 2 === 0 ? -100 : 100, // Tarjetas pares vienen de la izquierda, impares de la derecha
+      y: 50,
+      scale: 0.8
+    },
+    visible: { 
+      opacity: 1, 
+      x: 0, 
+      y: 0,
+      scale: 1
+    }
+  };
+
   return (
-    <div className="bg-zinc-900 rounded-lg overflow-hidden group transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+    <motion.div 
+      ref={ref}
+      variants={cardVariants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      transition={{
+        duration: 0.6,
+        delay: (index % 2) * 0.2,
+        ease: "easeOut"
+      }}
+      className="bg-zinc-900 rounded-lg overflow-hidden group transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
+    >
       <div className="relative">
         {/* Video Container */}
         <div className="relative aspect-video overflow-hidden">
@@ -76,7 +114,7 @@ const VideoCard = ({ title, description, videoUrl, category }: VideoCardProps) =
           </svg>
         </div> */}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
